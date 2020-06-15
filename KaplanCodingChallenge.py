@@ -46,6 +46,7 @@ def cancel_order(currency_pair):
     print(response.text)
 
 
+#On alert received
 @app.route('/', methods=['POST'])
 def alert_result():
     alert_data = request.json
