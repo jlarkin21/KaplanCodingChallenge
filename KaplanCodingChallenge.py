@@ -26,8 +26,6 @@ client = Client(account_sid, auth_token)
 
 app = Flask(__name__)
 
-holding_position = False
-
 def get_account_details():
     response = requests.get(url, headers=header)
     print(response.text)
